@@ -6,6 +6,5 @@ In particular I used Microsoft SQL Server Management Studios. The data was found
 Correlation with Movies: In this project, I used Python to analyze data from https://www.kaggle.com/danielgrijalvas/movies. 
 I was trying to determine what had the greatest impact on revenue in the movie industry through finding correlation in different categories. 
 
-Heart Attack Prediction: In this project, I used R and a data set from https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset.
-I used .....
+\
 
