@@ -1,10 +1,14 @@
 This is my portfolio for Data Analysis. Here is a description of each project I have done so far!
 
-Covid Data Exploration: In this project, I used a remote desktop through Amazon Web Services to analyze data in SQL. 
-In particular I used Microsoft SQL Server Management Studios. The data was found at https://ourworldindata.org/covid-deaths.
+
+
+Covid Data Exploration: In this project, I analyzed COVID-19 data from different countries and dates using SQL. I had to clean the data in Excel first, and then imported it into Microsoft SQL Server Management Studios. From there I did data exploration and found the amount of infected people who die in the United States, countries with the highest death rates, and what percentage of the population has been vaccinated. 
+The data was found at https://ourworldindata.org/covid-deaths.
+
+
 
 Correlation with Movies: In this project, I used Python to analyze data from https://www.kaggle.com/danielgrijalvas/movies. 
-I was trying to determine what had the greatest impact on revenue in the movie industry through finding correlation in different categories. 
+I tried to find out which categories had the most impact on overall revenue using scatter plots and correlation matrices. 
 
-\
+
 
