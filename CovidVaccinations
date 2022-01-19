@@ -1,0 +1,46 @@
+import pandas as pd
+import seaborn as sns
+import numpy as np
+
+import matplotlib
+import matplotlib.pyplot as plt
+plt.style.use('ggplot')
+from matplotlib.pyplot import figure
+
+matplotlib.rcParams['figure.figsize'] = (12,8)
+
+df = pd.read_csv(r'/Users/emilypozniak/Desktop/VaccineData.csv') #reading in the data
+print( 'data was read in')
+
+print(df.dtypes)
+
+
+df = df.replace(',','', regex=True)
+print(df.head())
+
+df = df.astype({"TOTAL_FATALITIES": int, "7DAY_FATALITIES": int, 'POPULATION': int})
+
+print(df.dtypes)
+
+plt.scatter(x = df['VACCINATED'], y = df['7FATAL/POP'])
+plt.ylim(-0.0001, 0.0001)
+plt.title('Percent Vaccinated vs. Fatalities in last 7 Days')
+plt.xlabel('Percent of Popultation Vaccinated')
+plt.ylabel('Fatalities in Last 7 Days')
+plt.show()
+
+
+plt.scatter(x = df['VACCINATED'], y = df['FATAL/POP'])
+plt.ylim(-0.01, 0.01)
+plt.title('Percent Vaccinated vs. Total Fatalities')
+plt.xlabel('Percent of Popultation Vaccinated')
+plt.ylabel('Fatalities in Last 7 Days')
+plt.show()
+
+
+correlation_matrix = df.corr()
+sns.heatmap(correlation_matrix, annot= True)
+plt.title('Correlation Matrix for Vaccination Data')
+plt.xlabel('Vaccinated')
+plt.ylabel('Fatality Rate')
+plt.show()
